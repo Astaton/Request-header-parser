@@ -16,7 +16,7 @@ app.set('trust proxy', true);
 
 //on get request try to get the client IP address, browser type, os, and platform
 app.get('/', (req, res)=>{
-	const userInfo = { 'IP': req.connection.remoteAddress};
+	const userInfo = { 'IP': req.ip};
 	let language = req.headers['accept-language']
 	let languageArr = language.split(',');
 	userInfo.Language = languageArr[0].slice(0, languageArr[0].length);;
