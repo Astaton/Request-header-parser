@@ -1,0 +1,17 @@
+{
+  "name": "pugrhpms",
+  "version": "1.0.0",
+  "description": "Microservice that parses header info and returns it to the client",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AAron Staton",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-useragent": "^1.0.12",
+    "http": "0.0.0",
+    "locale": "^0.1.0"
+  }
+}
