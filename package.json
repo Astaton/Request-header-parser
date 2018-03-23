@@ -12,6 +12,7 @@
     "express": "^4.16.3",
     "express-useragent": "^1.0.12",
     "http": "0.0.0",
-    "locale": "^0.1.0"
+    "locale": "^0.1.0",
+    "request-ip": "^2.0.2"
   }
 }

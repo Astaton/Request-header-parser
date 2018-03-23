@@ -12,6 +12,7 @@ app.use(useragent.express());
 
 //set view engine for pug
 app.set('view engine', 'pug');
+app.set('trust proxy', true);
 
 //on get request try to get the client IP address, browser type, os, and platform
 app.get('/', (req, res)=>{
