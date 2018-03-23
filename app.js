@@ -15,7 +15,7 @@ app.set('view engine', 'pug');
 
 //on get request try to get the client IP address, browser type, os, and platform
 app.get('/', (req, res)=>{
-	const userInfo = { 'IP': req.ip};
+	const userInfo = { 'IP': req.connection.remoteAddress};
 	let language = req.headers['accept-language']
 	let languageArr = language.split(',');
 	userInfo.Language = languageArr[0].slice(0, languageArr[0].length);;
